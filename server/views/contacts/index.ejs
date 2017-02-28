@@ -1,0 +1,42 @@
+<% include ../partials/header.ejs %>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="innver_content ">
+  <hr />
+  <div class="c_title ">
+    Contact
+  </div>
+  <hr />
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+          <br>
+          <h3>Contact List</h3>
+
+          <a class="btn btn-primary" href="/contacts/add"><i class="fa fa-plus"></i> Add a Contact</a>
+          <table class="table table-striped table-hover table-bordered">
+            <tr>
+              <th class="text-center">Name</th>
+              <th class="text-center">Number</th>
+              <th class="text-center">Email</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <% for (let count = 0; count < contacts.length; count++) { %>
+              <tr> <!-- Row Template -->
+                <td class="text-center"><%= contacts[count].name %></td>
+                <td class="text-center"><%= contacts[count].number %></td>
+                <td class="text-center"><%= contacts[count].email %></td>
+                <td class="text-center"><a class="btn btn-primary" href="/contacts/<%= contacts[count]._id %>" role="button"><i class="fa fa-pencil-square-o"></i> Edit</a></td>
+                <td class="text-center"><a class="btn btn-danger" href="/contacts/delete/<%= contacts[count]._id %>" role="button"><i class="fa fa-trash-o"></i> Delete</a></td>
+              </tr>
+            <% } %>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<% include ../partials/footer.ejs %>
+
+

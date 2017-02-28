@@ -6,7 +6,26 @@ let logger = require('morgan');
 let cookieParser = require('cookie-parser');
 let bodyParser = require('body-parser');
 
+// import "mongoose" NPM Module
+let mongoose = require('mongoose');
+
+// import the config module
+let config = require('./config/db');
+
+// connect to the Mongo db using the URI above
+mongoose.connect(process.env.URI || config.URI);
+
+// create a db object and make a reference to the connection
+let db = mongoose.connection;
+
+// listen for a successful connection
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => {
+  console.log("Conneced to MongoDB...");
+});
+
 let index = require('./routes/index');
+let contacts = require('./routes/contacts');
 
 let app = express();
 
@@ -23,6 +42,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
 app.use('/', index);
+app.use('/contacts', contacts);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

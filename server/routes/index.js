@@ -12,6 +12,13 @@ Revision History: 1.0
 let express = require('express');
 let router = express.Router();
 
+// import mongoose NPM package
+let mongoose = require('mongoose');
+
+// create the game object - represents a document in the
+// contacts collection
+let game = require('../models/contacts');
+
 /* GET home page. */
 router.get('/', (req, res, next) => {
   res.render('content/index', { title: 'Home' });
@@ -30,11 +37,6 @@ router.get('/projects', (req, res, next) => {
 /* GET service page. */
 router.get('/services', (req, res, next) => {
   res.render('content/services', { title: 'Services' });
-});
-
-/* GET contact page. */
-router.get('/contact', (req, res, next) => {
-  res.render('content/contact', { title: 'Contact' });
 });
 
 module.exports = router;
