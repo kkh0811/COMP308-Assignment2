@@ -15,18 +15,21 @@
     "debug": "~2.2.0",
     "ejs": "~2.5.2",
     "express": "~4.14.0",
+    "mongoose": "^4.8.5",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.0"
   },
-  "description": "",
+  "description": "Welcome to Assignment2",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kkh0811/COMP308-Assignment1.git"
+    "url": "git+https://github.com/kkh0811/COMP308-Assignment2"
   },
   "keywords": [
     "NodeJS",
-    "ExpressJS"
+    "ExpressJS",
+    "EJS"
+
   ],
   "author": "Giho Kim",
   "license": "ISC",
