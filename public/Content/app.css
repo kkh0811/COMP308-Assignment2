@@ -1,0 +1,130 @@
+/* custom css */
+/*
+#######################################################################################
+The name of source file : app.css
+The information of author :  Giho Kim #300738697
+Last Modified by: Giho Kim
+Last Modified date: 07-Feb-2017
+Program Description: This is main css file to handle a whole style of my web site.
+Revision History: 1.0
+#######################################################################################
+*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  
+  min-height: 1000px;
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding:20px 0;
+  width: 100%;
+  color:#999;
+  height: 80px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f9f9f9;
+}
+
+.c_post {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 970px;
+    padding-left: 150px;
+}
+
+.c_title {
+	margin-top: 20px;
+	margin-bottom: 0px;
+    text-align:center;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Comic Sans MS";
+}
+
+.c_sub_title {
+    padding-top:10px;
+    text-align:center;
+	font-size: medium;
+    font-family: "Comic Sans MS";
+	color: #808080;
+	font-weight: bolder;
+}
+
+.c_post_title {
+	margin-bottom: 20px;
+	padding-bottom:50px;
+	padding-left:20px;
+	font-size: 40px;
+	font-family: "comic Sans MS";
+	font-weight: lighter;
+	height:25px;
+	border-left:5px solid #F0461C;
+}
+
+.body-container {
+  margin-top: 50px;
+
+}
+
+.Resume
+{
+    margin-left:600px;
+    margin-right:auto;
+    width:970px;
+    padding-bottom:20px;
+}
+
+hr {
+margin-top:20px;
+margin-bottom:20px;
+border:0;
+border-top:1px solid #eee;
+}
+
+h4 {
+	font-family: "comic Sans MS";
+	color: #009900;
+	font-size: large;
+	font-weight: bold;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+}
+.innver_content{
+  padding-top: 100px;
+}
+
+.form
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:775px;
+  color: black;
+
+  
+
+
+}
+.input{
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.table-right {
+	border-color: #FFFFFF;
+	vertical-align: top;
+	text-align: right;
+	white-space: nowrap;
+  border-radius:15px;
+	color: black;
+	font-weight: bold;
+	font-family: "Khmer UI";
+}
+

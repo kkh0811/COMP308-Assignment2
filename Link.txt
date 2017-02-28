@@ -1,0 +1,2 @@
+Heroku: https://comp308-assignment1-giho.herokuapp.com/
+github: https://github.com/kkh0811/COMP308-Assignment1

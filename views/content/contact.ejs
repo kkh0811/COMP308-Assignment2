@@ -1,0 +1,122 @@
+<!--
+#######################################################################################
+The name of source file : contact.ejs
+The information of author :  Giho Kim #300738697
+Last Modified by: Giho Kim
+Last Modified date: 07-Feb-2017
+Program Description: this file is to handle contact page
+Revision History: 1.0
+#######################################################################################
+-->
+
+<% include ../partials/header.ejs %>
+  <!-- CONTENT PAGE FOR CONTACT -->
+  <!-- MAIN CONTENT -->
+  <div " class="container ">
+<div class="innver_content ">
+  <hr />
+  <div class="c_title ">
+    Contact
+  </div>
+  <hr />
+  <div style="text-align: center">
+<img class="img-circle" src="/Assets/images/contact.png" alt="Generic placeholder image" width="140" height="140">
+<h4>Name:</h4>
+Giho Kim
+<h4>Cell Phone:</h4>
+(416) 906 - 4789
+<h4>Email:</h4>
+kihokkang@gmail.com
+<h4>Address:</h4>
+75 Goulding Ave, Toronto, Ontario
+<hr>
+<p><a class="btn btn-lg btn-success" href="https://www.facebook.com/kihokkang" role="button">Facebook</a></p>
+<hr>
+<div class="form">
+  <form name="RegCustomer" action="mailto:kihokkang@gmail.com" method="post">
+    <table>
+      <tr>
+        <td class="table-right">YourName:</td>
+        <td>
+          <input class="input" id="txtName" type="text" size="100" /></td>
+      </tr>
+      <br>
+      <td class="table-right">Email:</td>
+      <td>
+        <input class="input" id="txtEmail" type="text" size="100" /></td>
+      </tr>
+      <tr>
+      </tr>
+      <td class="table-right">Message:</td>
+      <td>
+        <input class="input" id="txtMessage" type="text" size="100" style="height: 200px;"/></td>
+</tr>
+<tr>
+  <td class="table-right">
+    <input id="submit" type="button" onClick="doSave()" value="Send Email" /></td>
+<td>
+  <input id="reset" type="reset" value="Clear fields" /></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+
+<script type="text/javascript" Language="JavaScript">
+  function ltrim(varIn) {
+    var varOut = ""
+    if (!varIn) {
+    }
+    else {
+      for (intI = 0; intI < varIn.length; intI++) {
+        if (varIn.charAt(intI) != " ") {
+          varOut = varIn.substring(intI)
+          break
+        }
+      }
+    }
+    return varOut
+  }
+  function doSave() {
+    var fOk = true;
+    var strMsg
+    var ctlName = document.RegCustomer.txtName
+    var ctlEmail = document.RegCustomer.txtEmail
+    var ctlNote = document.RegCustomer.txtMessage
+
+    if ((ltrim(ctlName.value)).length == 0) {
+      fOk = false
+      strMsg = "Name is required field"
+      ctlName.focus()
+    }
+    else {
+      if ((ltrim(ctlEmail.value)).length == 0) {
+        fOk = false
+        strMsg = "Email is a required field."
+        ctlEmail.focus()
+      }
+      else {
+        if ((ltrim(ctlNote.vale)).length == 0) {
+          fOk = false;
+          strMsg = "Please enter a comment!!"
+          ctlNote.focus()
+        }
+      }
+    }
+    if (fOk) {
+      alert(strMsg = "Thank you for using this service!");
+      document.RegCustomer.submit();
+    }
+    else
+      alert(strMsg);
+
+  }
+
+
+</script>
+
+</div>
+
+</div>
+<!-- END OF MAIN CONTENT -->
+<% include ../partials/footer.ejs %>
