@@ -11,12 +11,17 @@
   },
   "dependencies": {
     "body-parser": "~1.15.2",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "ejs": "~2.5.2",
     "express": "~4.14.0",
+    "express-session": "^1.15.1",
     "mongoose": "^4.8.5",
     "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0",
     "serve-favicon": "~2.3.0"
   },
   "description": "Welcome to Assignment2",
@@ -29,12 +34,17 @@
     "NodeJS",
     "ExpressJS",
     "EJS"
-
   ],
   "author": "Giho Kim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kkh0811/COMP308-Assignment1/issues"
   },
-  "homepage": "https://github.com/kkh0811/COMP308-Assignment1#readme"
+  "homepage": "https://github.com/kkh0811/COMP308-Assignment1#readme",
+  "devDependencies": {
+    "@types/connect-flash": "0.0.31",
+    "@types/express-session": "0.0.32",
+    "@types/passport-local": "^1.0.29",
+    "@types/passport-local-mongoose": "^4.0.8"
+  }
 }
