@@ -22,6 +22,15 @@ let User = UserModel.User; // alias for User
 // contacts collection
 let contact = require('../models/contacts');
 
+/*
+#######################################################################################
+The name of source file : index.js
+The information of author :  Giho Kim
+The student number: 300738697
+Web App name: Assignment2
+#######################################################################################
+*/
+
 // function to check if the user is authenticated
 function requireAuth(req, res, next) {
   // check if the user is logged index

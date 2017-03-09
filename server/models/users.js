@@ -1,3 +1,12 @@
+/*
+#######################################################################################
+The name of source file : users.js
+The information of author :  Giho Kim
+The student number: 300738697
+Web App name: Assignment2
+#######################################################################################
+*/
+
 // require these modules for our user model
 let mongoose = require("mongoose");
 let Schema = mongoose.Schema;

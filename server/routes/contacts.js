@@ -1,3 +1,12 @@
+/*
+#######################################################################################
+The name of source file : contacts.js
+The information of author :  Giho Kim
+The student number: 300738697
+Web App name: Assignment2
+#######################################################################################
+*/
+
 // import the express object
 let express = require('express');
 // create the router for our application
