@@ -9,7 +9,7 @@ Web App name: Assignment2
 
 module.exports = {
   // Local MongoDB ->
-  "URI" : "mongodb://localhost/contacts"
-
-  //MLab -> "URI": "mongodb://thomas:123456@ds054999.mlab.com:54999/videogames"
+  //"URI" : "mongodb://localhost/contacts"
+  //MLab -> 
+  "URI" : "mongodb://kkh0811:12345@ds145359.mlab.com:45359/contacts"
 }
